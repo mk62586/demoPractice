@@ -1,0 +1,7 @@
+toggle =   div>.ant-switch    
+
+number fill =.ant-input-number-input 
+
+save button =    [class="ui-panel -block"]>button 
+
+//span[contains(text(),'Settings saved.')]

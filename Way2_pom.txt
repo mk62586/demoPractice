@@ -1,0 +1,26 @@
+1.HomePage of element
+a.Interaction of parent webelement
+ 1.Draggable
+ 2.Droppable
+ 3.Resizable
+ 4.selectable
+ 5.sortable
+these are sub-element 
+
+b.Widget of parent WebElement
+1.accordion
+2.Autocomplete
+3.DatePicker
+4.Menu
+5.slider
+6.Tabs
+7.Tooltips
+
+c.Frames and Windows
+
+d.Dynamic Elements
+ 1.submit button clicked
+2.Dropdown
+
+e.Registration
+f.Alert

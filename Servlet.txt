@@ -1,0 +1,13 @@
+String stid = request.getParameter("id");
+		int id = Integer.parseInt(stid);
+		String category = request.getParameter("category");
+		String company = request.getParameter("company");
+		String quantity = request.getParameter("quantity");
+		int quant = Integer.parseInt(quantity);
+		String stPrice = request.getParameter("price");
+		double price = Double.parseDouble(stPrice);
+		
+		ProductDTO1 dto = new ProductDTO1(id,category,company,stPrice, quant,price);
+		
+		ProductDAO1 dao = new ProductDAO1();
+		dao.add(dto);

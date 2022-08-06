@@ -1,0 +1,32 @@
+tr:nth-child(3) > td:nth-child(3) > span:nth-child(1)
+
+//input[contains(@placeholder,'Search by invoice')]
+
+//input[contains(@placeholder,'Search by invoice')]
+
+test+1645107382568@email.ghostinspector.com
+
+	test+1645109492517@email.ghostinspector.com
+
+
+
+
+
+
+
+
+
+
+
+//div[normalize-space()='Jake Kertzmann']
+
+//a[normalize-space()='test+1645108111210@email.ghostinspector.com']
+
+Invoice customer changed.
+Invoice customer changed.
+
+//*[contains(text(), "Invoice customer changed.")]
+
+//a[@href='mailto:{{email}}']
+
+//div[normalize-space()='{{first}} {{last}}']

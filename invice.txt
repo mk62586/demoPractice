@@ -1,0 +1,16 @@
+//input[contains(@placeholder,'Search by invoice')]
+
+element lo invoice id   =  //td[2]/div[1]/span[1]
+
+
+element present = //span[contains(text(), "{{invoiceNumber}}")]
+
+
+eleme first prenst = //span[contains(text(), '{{first}}')]
+
+
+//span[contains(text(), "Open")]
+
+//td[contains(text(), "${{price}}.00")]
+
+

@@ -1,0 +1,69 @@
+
+public DTA{
+
+public Connection getAddProduct(ProductDTO dto){
+Class.forName("com.mysql.jdbc.driver");
+Connection con = DriverManager.getConnection("insert into emplyoe (name,id,company,category) values (?,?,?,?,?);//con me sab store ho gaya all key and value 
+con.prepareStatement(1,"dto.getName()");
+con.prepareStatement(2,"dto.getCompany()");
+con.prepareStatement(3,"dto.getProduct()");
+con.prepareStatement(4,dto.Price());
+con.executeUpdate();//these will not return object type
+return con;
+Here step of AddCart
+
+1.  AddProductServlet
+
+respose.setContentType("text/html");
+PrintWriter writer = response.getWriter();
+
+String stId = request.getParameter("id");
+int id = Integer.pareseint(stId);//now id come in int form here we use wrapper class
+String name = request.getParameter("name");
+String company = request.getParameter("company");
+String category = request.getParameter("category);
+
+
+ProductDTO dto = new ProductDTO(id,name,company,category);
+
+ProductDTO dt = dto.getAddProduct();
+
+
+Start
+
+public class ProductDAO{
+
+private Connection getConnection(){
+try{
+Class.forName("com.mysql.jdbc.driver");
+
+
+Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/cj1?user=root&password=root");
+return con;
+}catch(ClassNotFoundException | SQLExecption e){
+e.printStackTrace();
+return null;
+}
+}
+
+public void add(ProductDTO dto){
+try{
+Connection con =getConnection();
+Preparedstatement pst = con.prepareStatement("insert into product values(?,?,?,?)");
+
+pst.setInt(1,dto.getId());
+pst.setString(2,dto.getName());
+pst.setString(3,dto.getCompany());
+pst.setString(3,dto.getQuantity());
+pst.setString(4,dto.getCompany());
+pst.executeUpdate();
+System.out.println("Data added");
+
+}catch(ClassNotFoundException | SQLExecption e){
+e.printStackTrace();
+}
+}
+}
+
+
+

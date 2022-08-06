@@ -1,0 +1,26 @@
+Total page of element in Actitime
+A.Login page
+
+1.username text field
+2.password Text field
+3.login button
+4.forget password link
+5.actitime inc
+
+There are total five element in actitime
+
+B.HomePage
+1.switch to acitiplans.
+2.time-track link.
+3.Tasks link.
+4.Reports link.
+5.Users link.
+6.calender dropDown.
+7.Setting DropDown.
+8.logout link.
+9.Integration dropdown
+10.helpandsupport dropdown
+
+these are homepage element
+
+c.

@@ -1,0 +1,36 @@
+response.setContentType("text/html");
+		PrintWriter writer = response.getWriter();
+		
+//		String st = request.getParameter("id");
+//		int idNo = Integer.parseInt(st);
+		String name = request.getParameter("name");
+		String category = request.getParameter("category");
+		String company = request.getParameter("company");
+		String quant = request.getParameter("quantity");
+		int quantity = Integer.parseInt(quant);
+		String stPrice = request.getParameter("price");
+		double price = Double.parseDouble(stPrice);
+		
+		ProductDTO1 dto = new ProductDTO1(++id,name,category,company,quantity,price);
+	
+		ProductDAO1 dta = new ProductDAO1();
+	      dta.add(dto);
+		
+	}
+}
+
+
+
+PreparedStatement prepareStatement = connection.prepareStatement("insert into products_info(id,name,category,company,quantity,price)values(?,?,?,?,?,?)");
+			prepareStatement.setInt(1, 1);
+			prepareStatement.setString(2, dto.getName());
+			prepareStatement.setString(3, dto.getCategory());
+			prepareStatement.setString(4, dto.getCompany());
+			prepareStatement.setInt(5, dto.getQuantity());
+			prepareStatement.setDouble(6, dto.getPrice());
+			prepareStatement.executeUpdate();
+			System.out.println("Data added");
+            } catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}

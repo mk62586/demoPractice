@@ -1,0 +1,4 @@
+/Hibernate/lib/mysql-connector-java-8.0.22.jar
+com.mysql.cj.configurations
+
+com.mysql.cj.jdbc.Driver
