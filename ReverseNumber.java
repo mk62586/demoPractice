@@ -14,5 +14,5 @@ no=no/10;
 System.out.println(out+" Reverse number");
   }
 }
-
+}
  
